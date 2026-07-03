@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6f8fb" />
+    <meta name="description" content="Auto-generate BlurHash placeholders for images in your Appwrite Storage." />
+    <title>Blurhash for Appwrite</title>
+    <script>
+      // node-appwrite reads process.platform/arch (unguarded) when building its
+      // User-Agent. Provide a harmless global before the SDK loads.
+      window.global = window;
+      window.process = window.process || { env: {}, platform: 'browser', arch: 'wasm', version: '' };
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

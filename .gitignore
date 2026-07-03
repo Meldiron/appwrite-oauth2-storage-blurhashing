@@ -1,0 +1,6 @@
+code.tar.cz
+node_modules
+dist
+*.local
+.DS_Store
+.vite
