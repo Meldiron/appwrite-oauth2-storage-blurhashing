@@ -842,7 +842,7 @@ input {
   top: 42px;
   right: 8px;
   z-index: 5;
-  min-width: 172px;
+  min-width: 150px;
   background: #fff;
   border: 1px solid var(--border);
   border-radius: 12px;
